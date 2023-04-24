@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    cursor: default;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+body {
+    font-size: 12px;
+    empty-cells: hide;
+    direction: ltr;
+    font-family: 'Lexend', sans-serif;
+    background-color: #222;
+}
+
+:root {
+    --primary-color: #222;
+    --secondary-color: #5353fd;
+}
+
+.sect {
+    padding: 0 5% 10%;
+    margin-bottom: 5%;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: 600;
+    color: #fff;
+    line-height: 3.75em;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.btn {
+    background-color: #fff;
+    color: #222;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+
+.ico {
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+}
+
+/*** Main Section ***/
+.min-sect {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding-bottom: 0;
+}
+
+.min-sect p {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #222;
+    line-height: 2.25em;
+}
+
+.min-sect h2 {
+    font-size: 3em;
+    font-weight: 600;
+    color: #222;
+    line-height: 60px;
+    margin-bottom: 5%;
+}
+
+.min-sect .contact-btn {
+    font-size: 1.3em;
+    font-weight: 500;
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 2% 4%;
+    margin: 5% 0;
+}
+
+.min-sect-img {
+    width: 50%;
+}
+
+.contact-container {
+    position: fixed;
+    width: 60%;
+    height: 60vh;
+    background-color: var(--primary-color);
+    margin: auto;
+}
+
+/*** About Section ***/
+.about-sect {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: #fff 1px solid;
+}
+
+.about-sect .title {
+    text-align: start;
+}
+
+.my-img {
+    width: 20%;
+}
+
+.paragraph-container {
+    width: 60%;
+}
+
+.paragraph-container p {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #fff;
+    line-height: 2em;
+    margin-bottom: 3%;
+}
+
+.download-btn {
+    font-size: 1.12em;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    line-height: 1.40em;
+    background-color: var(--secondary-color);
+    padding: 1% 3%;
+}
+
+/*** Skills Section ***/
+.skills-sect {
+    position: relative;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3%;
+    background-color: #fff;
+    text-align: center;
+    padding: 10%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.skill-ico {
+    font-size: 3em;
+    margin: 3% 0;
+}
+
+.skill {
+    font-size: 1.5em;
+    margin: 3% 0;
+}
+
+.html {
+    color: #B11D1D;
+}
+
+.css {
+    color: #2A237B;
+}
+
+.js {
+    color: #F0DB4F;
+}
+
+.bootstrap {
+    color: #671BC7;
+}
+
+.figma {
+    color: #671BC7;
+}
+
+.ftp {
+    color: #B11D1D;
+}
+
+.ps {
+    color: #1B6AC7;
+}
+
+.wordpress {
+    color: #23667B;
+}
+
+/*** Projects Section ***/
+.projects-sect {
+    background-color: #fff;
+}
+
+.projects-sect .title {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.project-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+    margin: auto;
+}
+
+.project-card {
+    overflow: hidden;
+    box-shadow: 5px 5px 5px #00000060;
+    cursor: pointer;
+}
+
+.project-img {
+    width: 100%;
+    cursor: pointer;
+}
+
+/*** Services Section ***/
+.services-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+    margin: auto;
+}
+
+.service-card {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 5% 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.service-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+.web-development {
+    background-color: #9068be;
+}
+
+.hosting {
+    background-color: #6ed3cf;
+}
+
+.domain {
+    background-color: #9068be;
+}
+
+.hosting-management {
+    background-color: #e1e8f0;
+}
+
+.ftp-management {
+    background-color: #e62739;
+}
+
+.wordpress-websites {
+    background-color: #6ed3cf;
+}
+
+/*** Responsive Media ***/
+@media(max-width: 1280px) {
+    .br {
+        display: none;
+    }
+}
+
+@media(max-width: 1024px) {
+    .title {
+        font-size: 2.25em;
+    }
+
+    .min-sect p{
+        font-size: 1.12em;
+    }
+
+    .min-sect h2 {
+        font-size: 2.25em;
+        line-height: 45px;
+    }
+
+    .min-sect .contact-btn {
+        width: 100px;
+        height: 45px;    
+        font-size: .85em;
+    }
+
+    .paragraph-container p {
+        font-size: .87em;
+    }
+
+    .download-btn {
+        font-size: .80em;
+    }
+
+    .skill-ico {
+        font-size: 2.25em;
+    }
+
+    .skill {
+        font-size: .90em;
+    }
+
+    .alert-warning {
+        font-size: .75em;
+        color:#664d03;
+        background-color:#fff3cd;
+        border-color:#ffecb5;
+    }
+
+    .service-card {
+        height: 225px;
+    }
+
+    .service-heading {
+        font-size: .90em;
+    }
+
+    .view-more {
+        font-size: .75em;
+    }
+}
+
+@media(max-width: 912px) {
+    .project-container {
+        width: 80%;
+    }
+}
+
+@media(max-width: 540px) {
+    .min-sect {
+        justify-content: center;
+        text-align: center;
+        background: linear-gradient(#00000090, #00000090), url('/img/min-sect/min-sect-person-img.jpg') no-repeat center;
+        background-size: cover;
+    }
+
+    .min-sect p,
+    .min-sect h2 {
+        color: #fff;
+    }
+
+    .min-sect-img {
+        display: none;
+    }
+
+    .about-sect {
+        justify-content: center;
+    }
+
+    .about-sect .title {
+        text-align: center;
+    }
+
+    .my-img {
+        display: none;
+    }
+
+    .paragraph-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .services-container {
+        width: 95%;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 375px) {
+    .title {
+        font-size: 1.5em;
+    }
+
+    .min-sect p{
+        font-size: .75em;
+    }
+
+    .min-sect h2 {
+        font-size: 1.5em;
+        line-height: 30px;
+    }
+
+    .min-sect .contact-btn {
+        width: 80px;
+        height: 30px;    
+        font-size: .50em;
+    }
+
+    .paragraph-container p {
+        font-size: .75em;
+    }
+
+    .download-btn {
+        font-size: .56em;
+    }
+
+    .skill-ico {
+        font-size: 1.5em;
+    }
+
+    .skill {
+        font-size: .75em;
+    }
+
+    .alert-warning {
+        font-size: .5em;
+        color:#664d03;
+        background-color:#fff3cd;
+        border-color:#ffecb5;
+    }
+
+    .service-card {
+        height: 150px;
+    }
+
+    .service-heading {
+        font-size: 1em;
+    }
+
+    .view-more {
+        font-size: .5em;
+    }
+}
