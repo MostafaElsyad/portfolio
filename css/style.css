@@ -368,7 +368,7 @@ a {
     .min-sect {
         justify-content: center;
         text-align: center;
-        background: linear-gradient(#00000090, #00000090), url('/img/min-sect/min-sect-person-img.jpg') no-repeat center;
+        background: linear-gradient(#00000090, #00000090), url('../img/min-sect/min-sect-person-img.jpg') no-repeat center;
         background-size: cover;
     }
 
