@@ -1,1 +1,16 @@
-
+.scroll-btn {
+  position: fixed;
+  display: flex;
+  width: 25px;
+  height: 25px;
+  top: 10%;
+  right: 10%;
+  font-size: 1.2em;
+  font-weight: 500;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  padding: 3%;
+}
