@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: transparent;
-    padding: 1% 5%;
+    padding: 2em 5em;
 }
 
 .logo {
@@ -31,25 +31,12 @@
     color: #fff;
     text-decoration: none;
     text-transform: capitalize;
-    margin: 0 8%;
+    margin: 0 1em;
     cursor: pointer;
 }
 
 .social-ico {
-    margin: 0 5%;
-}
-
-.min-header .contact-btn {
-    font-size: 1.125em;
-    font-weight: 500;
-    color: #222;
-    text-align: center;
-    padding: 3% 8%;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
+    margin: 0 .5em;
 }
 
 .nav-btn {
@@ -65,8 +52,7 @@
     }
 
     .nav-link,
-    .social-ico,
-    .min-header .contact-btn {
+    .social-ico {
         font-size: .81em;
     }
 }

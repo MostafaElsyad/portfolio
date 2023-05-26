@@ -20,21 +20,22 @@
 
 .side-nav .nav-link {
     width: 100%;
-    font-size: 1em;
+    font-size: 2em;
     color: var(--primary-color);
+    line-height: 3em;
     border-bottom: var(--primary-color) 1px solid;
-    margin: 5% 0 3%;
+    margin: 0 .5em;
 }
 
 .side-nav .social-icons {
     display: flex;
     flex-direction: row;
-    margin: 10%;
 }
 
 .side-nav .social-ico {
-    font-size: 1em;
+    font-size: 2em;
     color: var(--primary-color);
+    margin: 3em .5em;
 }
 
 .close-nav {

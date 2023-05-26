@@ -1,8 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en ar ar-EG">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="I am a Front-end web developer">
+    <meta name="keywords" content="
+    Front-end web developer
+    Web design
+    Web development
+    HTML
+    CSS
+    JavaScript
+    React
+    Bootstrap
+    Responsive web design
+    User interface
+    User experience
+    Portfolio
+    Projects
+    Skills
+    Contact
+    ">
+    <meta name="author" content="Mostafa Elsyad">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/header.css">
@@ -14,144 +33,121 @@
     <title>Mostafa | Portfolio Website</title>
 </head>
 <body>
-    <header class="min-header">
-        <a href="" class="logo">mostafa</a>
-        <nav class="navigation">
-            <a href="#home" class="nav-link">home</a>
-            <a href="#skills" class="nav-link">skills</a>
-            <a href="#projects" class="nav-link">projects</a>
-            <a href="#services" class="nav-link">services</a>
-        </nav>
-        <nav class="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=100084809237464" target="_blank" class="social-ico"><i class="fa-brands fa-facebook ico"></i></a>
-            <a href="https://www.instagram.com/mustafa_elsyad/" target="_blank" class="social-ico"><i class="fa-brands fa-instagram ico"></i></a>
-            <a href="https://www.linkedin.com/in/mostafa-elsyad/" target="_blank" class="social-ico"><i class="fa-brands fa-linkedin ico"></i></a>
-            <a href="https://discord.com/channels/@me/Mostafa#9722" target="_blank" class="social-ico"><i class="fa-brands fa-discord ico"></i></a>
-            <a href="mailto:frontendwebmarkting@outlook.com" target="_blank" class="social-ico"><i class="fa-regular fa-envelope ico"></i></a>
-        </nav>
-        <button id="navBTN" class="nav-btn"><i class="fa-solid fa-bars"></i></button>
-    </header>
-    <nav id="sideNav" class="side-nav">
-        <a href="#home" class="nav-link">home</a>
-        <a href="#skills" class="nav-link">skills</a>
-        <a href="#projects" class="nav-link">projects</a>
-        <a href="#services" class="nav-link">services</a>
-        <nav class="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=100084809237464" target="_blank" class="social-ico"><i class="fa-brands fa-facebook ico"></i></a>
-            <a href="https://www.instagram.com/mustafa_elsyad/" target="_blank" class="social-ico"><i class="fa-brands fa-instagram ico"></i></a>
-            <a href="https://www.linkedin.com/in/mostafa-elsyad/" target="_blank" class="social-ico"><i class="fa-brands fa-linkedin ico"></i></a>
-            <a href="https://discord.com/channels/@me/Mostafa#9722" target="_blank" class="social-ico"><i class="fa-brands fa-discord ico"></i></a>
-            <a href="mailto:frontendwebmarkting@outlook.com" target="_blank" class="social-ico"><i class="fa-regular fa-envelope ico"></i></a>
-        </nav>
-    </nav>
-    <div id="closeNav" class="close-nav"></div>
-    <section id="home" class="min-sect sect">
-        <div class="min-sect-container">
-            <p>Welcome to my portfolio</p>
-            <h2>Hello! my name is Mostafa,<br class="br">and I'm a Front-end web developer</h2>
-            <a href="callto:+201027447415" id="contactBTN" class="contact-btn btn" title="on phone number">contact me</a>
-        </div>
-        <img src="img/min-sect/min-sect-person-img.jpg" alt="person-img" class="min-sect-img">
-    </section>
-    <section id="about" class="about-sect sect">
-        <img src="img/about-sect/my-img.jpg" alt="my-img" class="my-img">
-        <div class="paragraph-container">
-            <h2 class="title">about me</h2>
-            <p>Hello, my name is Mostafa, I work as a Front-end web developer and WordPress websites, I graduated from high school in the class of 2020, and I was wishing to enter the Institute of computer science but I got problems that didn't help me to enter, I didn't stop and I studied the development and programming before I graduated from high school yet, I studied from open sources for free on the internet and on YouTube, now I work on the development and I still learn and develop of myself.</p>
-            <p>I am a Front-end web developer who loves creating beautiful and functional websites. I have a keen eye for design and a passion for coding. I am using HTML, CSS, JavaScript and other tools to build responsive and interactive web pages. I enjoy working with clients and collaborating with other developers. I am are always eager to learn new skills and technologies to improve my craft. I am a creative and problem-solving person who takes pride in your work.</p>
-            <a href="download_CV/Mostafa's_cv.pdf" class="download-btn btn" download="Mostafa's CV"><i class="fa fa-download"></i> Download CV</a>
-        </div>
-    </section>
-    <section id="skills" class="skills-sect sect">
-        <h2 class="title">skills</h2>
-        <div class="skills-container">
-            <div>
-                <i class="fa-brands fa-html5 skill-ico html"></i>
-                <p class="skill">HTML</p>
+    <div id="app">
+        <header_component></header_component>
+        <side_nav_component></side_nav_component>
+        <div id="closeNav" class="close-nav"></div>
+        <section id="home" class="min-sect sect">
+            <div class="min-sect-container">
+                <p>Welcome to my portfolio</p>
+                <h2>Hello! my name is Mostafa,<br class="br">and I'm a Front-end web developer</h2>
+                <a href="callto:+201027447415" id="contactBTN" class="contact-btn btn" title="on phone number">contact me</a>
             </div>
-            <div>
-                <i class="fa-brands fa-css3 skill-ico css"></i>
-                <p class="skill">CSS</p>
+            <img src="img/min-sect/min-sect-person-img.jpg" alt="person-img" class="min-sect-img">
+        </section>
+        <section id="about" class="about-sect sect">
+            <img src="img/about-sect/my-img.jpg" alt="my-img" class="my-img">
+            <div class="paragraph-container">
+                <h2 class="title">about me</h2>
+                <p>Hello, my name is Mostafa, I work as a Front-end web developer and WordPress websites, I graduated from high school in the class of 2020, and I was wishing to enter the Institute of computer science but I got problems that didn't help me to enter, I didn't stop and I studied the development and programming before I graduated from high school yet, I studied from open sources for free on the internet and on YouTube, now I work on the development and I still learn and develop of myself.</p>
+                <p>I am a Front-end web developer who loves creating beautiful and functional websites. I have a keen eye for design and a passion for coding. I am using HTML, CSS, JavaScript and other tools to build responsive and interactive web pages. I enjoy working with clients and collaborating with other developers. I am are always eager to learn new skills and technologies to improve my craft. I am a creative and problem-solving person who takes pride in your work.</p>
+                <a href="download_CV/Mostafa's_cv.pdf" class="download-btn btn" download="Mostafa's CV"><i class="fa fa-download"></i> Download CV</a>
             </div>
-            <div>
-                <i class="fa-brands fa-js skill-ico js"></i>
-                <p class="skill">JavaScript</p>
+        </section>
+        <section id="skills" class="skills-sect sect">
+            <h2 class="title">skills</h2>
+            <div class="skills-container">
+                <div class="html-container skill-card">
+                    <i class="fa-brands fa-html5 skill-ico html"></i>
+                    <p class="skill">HTML</p>
+                </div>
+                <div class="css-container skill-card">
+                    <i class="fa-brands fa-css3 skill-ico css"></i>
+                    <p class="skill">CSS</p>
+                </div>
+                <div class="js-container skill-card">
+                    <i class="fa-brands fa-js skill-ico js"></i>
+                    <p class="skill">JavaScript</p>
+                </div>
+                <div class="bootstrap-container skill-card">
+                    <i class="fa-brands fa-bootstrap skill-ico bootstrap"></i>
+                    <p class="skill">Bootstrap</p>
+                </div>
+                <div class="figma-container skill-card">
+                    <i class="fa-brands fa-figma skill-ico figma"></i>
+                    <p class="skill">Figma</p>
+                </div>
+                <div class="ftp-container skill-card">
+                    <i class="fa-solid fa-shuffle skill-ico ftp"></i>
+                    <p class="skill">FTP</p>
+                </div>
+                <div class="ps-container skill-card">
+                    <i class="fa-solid fa-image skill-ico ps"></i>
+                    <p class="skill">Photoshop</p>
+                </div>
+                <div class="wordpress-container skill-card">
+                    <i class="fa-brands fa-wordpress skill-ico wordpress"></i>
+                    <p class="skill">WordPress</p>
+                </div>
+                <div class="github-container skill-card">
+                    <i class="fa-brands fa-github skill-ico github"></i>
+                    <p class="skill">GitHub</p>
+                </div>
+                <div class="vuejs-container skill-card">
+                    <i class="fa-brands fa-vuejs skill-ico vuejs"></i>
+                    <p class="skill">Vue.js</p>
+                </div>
             </div>
-            <div>
-                <i class="fa-brands fa-bootstrap skill-ico bootstrap"></i>
-                <p class="skill">Bootstrap</p>
+        </section>
+        <section id="projects" class="projects-sect sect">
+            <h2 class="title">stack projects</h2>
+            <div class="project-container">
+                <a href="#" target="_blank" class="project-card card"><img src="img/projects-sect/Futura.png" alt="project" class="project-img"></a>
+                <a href="#" target="_blank" class="project-card card"><img src="img/projects-sect/home-based.png" alt="project" class="project-img"></a>
+                <a href="#" target="_blank" class="project-card card"><img src="img/projects-sect/hotel.png" alt="project" class="project-img"></a>
             </div>
-            <div>
-                <i class="fa-brands fa-figma skill-ico figma"></i>
-                <p class="skill">Figma</p>
+            <h2 class="title">javascript projects</h2>
+            <div class="project-container">
+                <a href="https://mostafaelsyad.github.io/JavaScript_XO/" target="_blank" class="project-card card"><img src="img/projects-sect/xo.png" alt="project" class="project-img"></a>
+                <a href="#" target="_blank" class="project-card card"><img src="img/projects-sect/crud.png" alt="project" class="project-img"></a>
             </div>
-            <div>
-                <i class="fa-solid fa-shuffle skill-ico ftp"></i>
-                <p class="skill">FTP</p>
+            <h2 class="title">vue.js projects</h2>
+            <div class="project-container">
             </div>
-            <div>
-                <i class="fa-solid fa-image skill-ico ps"></i>
-                <p class="skill">Photoshop</p>
+        </section>
+        <section id="services" class="services-sect sect">
+            <h2 class="title">services</h2>
+            <div class="services-container">
+                <div class="service-card card web-development">
+                    <i class="fa-solid fa-code service-ico"></i>
+                    <h3 class="service-heading">web development</h3>
+                </div>
+                <div class="service-card card hosting">
+                    <i class="fa-solid fa-server service-ico"></i>
+                    <h3 class="service-heading">Hosting</h3>
+                </div>
+                <div class="service-card card domain">
+                    <i class="fa-solid fa-link service-ico"></i>
+                    <h3 class="service-heading">Domain Name</h3>
+                </div>
+                <div class="service-card card hosting-management">
+                    <i class="fa-brands fa-cpanel service-ico"></i>
+                    <h3 class="service-heading">Hosting Management</h3>
+                </div>
+                <div class="service-card card ftp-management">
+                    <i class="fa-solid fa-shuffle service-ico"></i>
+                    <h3 class="service-heading">FTP Management</h3>
+                </div>
+                <div class="service-card card wordpress-websites">
+                    <i class="fa-brands fa-wordpress service-ico"></i>
+                    <h3 class="service-heading">WordPress Websites</h3>
+                </div>
             </div>
-            <div>
-                <i class="fa-brands fa-wordpress skill-ico wordpress"></i>
-                <p class="skill">WordPress</p>
-            </div>
-            <div>
-                <i class="fa-brands fa-github skill-ico github"></i>
-                <p class="skill">GitHub</p>
-            </div>
-        </div>
-    </section>
-    <section id="projects" class="projects-sect sect">
-        <h2 class="title">projects</h2>
-        <div class="project-container">
-            <a href="https://mostafaelsyad.github.io/Futura/" target="_blank"><div class="project-card card"><img src="img/projects-sect/Futura.png" alt="project" class="project-img"></div></a>
-            <a href="https://mostafaelsyad.github.io/Home-Based/" target="_blank"><div class="project-card card"><img src="img/projects-sect/home-based.png" alt="project" class="project-img"></div></a>
-            <a href="" target="_blank"><div class="project-card card"><img src="img/projects-sect/hotel.png" alt="project" class="project-img"></div></a>
-        </div>
-    </section>
-    <section id="services" class="services-sect sect">
-        <h2 class="title">services</h2>
-        <div class="services-container">
-            <div class="service-card card web-development">
-                <i class="fa-solid fa-code service-ico"></i>
-                <h3 class="service-heading">web development</h3>
-            </div>
-            <div class="service-card card hosting">
-                <i class="fa-solid fa-server service-ico"></i>
-                <h3 class="service-heading">Hosting</h3>
-            </div>
-            <div class="service-card card domain">
-                <i class="fa-solid fa-link service-ico"></i>
-                <h3 class="service-heading">Domain Name</h3>
-            </div>
-            <div class="service-card card hosting-management">
-                <i class="fa-brands fa-cpanel service-ico"></i>
-                <h3 class="service-heading">Hosting Management</h3>
-            </div>
-            <div class="service-card card ftp-management">
-                <i class="fa-solid fa-shuffle service-ico"></i>
-                <h3 class="service-heading">FTP Management</h3>
-            </div>
-            <div class="service-card card wordpress-websites">
-                <i class="fa-brands fa-wordpress service-ico"></i>
-                <h3 class="service-heading">WordPress Websites</h3>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <p>Designed by & Copyright back to © <span>mostafa elsyad</span></p>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=100084809237464" target="_blank" class="social-ico"><i class="fa-brands fa-facebook ico"></i></a>
-            <a href="https://www.instagram.com/mustafa_elsyad/" target="_blank" class="social-ico"><i class="fa-brands fa-instagram ico"></i></a>
-            <a href="https://www.linkedin.com/in/mostafa-elsyad/" target="_blank" class="social-ico"><i class="fa-brands fa-linkedin ico"></i></a>
-            <a href="https://discord.com/channels/@me/Mostafa#9722" target="_blank" class="social-ico"><i class="fa-brands fa-discord ico"></i></a>
-            <a href="mailto:frontendwebmarkting@outlook.com" target="_blank" class="social-ico"><i class="fa-regular fa-envelope ico"></i></a>
-        </div>
-    </footer>
-    <button id="scrollBTN" class="scroll-btn"><i class="fa-solid fa-arrow-up-long scroll-ico"></i></button>
-    <script src="js/nav-btn.js"></script>
-    <script src="js/scroll-btn.js"></script>
+        </section>
+        <footer_component></footer_component>
+        <scroll_btn_component></scroll_btn_component>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/vue.js"></script>
 </body>
 </html>

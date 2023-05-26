@@ -6,7 +6,7 @@
     width: 35px;
     height: 35px;
     bottom: -6%;
-    right: 3%;
+    right: 3em;
     font-size: 2em;
     font-weight: 500;
     background-color: var(--secondary-color);
