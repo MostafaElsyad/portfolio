@@ -38,8 +38,6 @@ body {
     line-height: 3.75em;
     text-transform: capitalize;
     text-align: center;
-    animation: opacity 1s ease;
-    -webkit-animation: opacity 1s ease;
 }
 
 .btn {
@@ -79,23 +77,17 @@ a {
     font-weight: 400;
     color: #222;
     line-height: 2.25em;
-    animation: fade-in 1s ease;
-    -webkit-animation: fade-in 1s ease;
 }
 
 .min-sect h2 {
-    opacity: 0;
     font-size: 3em;
     font-weight: 600;
     color: #222;
     line-height: 1.8em;
     margin-bottom: 1em;
-    animation: fade-in 1.5s ease 1s forwards;
-    -webkit-animation: fade-in 1.5s ease 1s forwards;
 }
 
 .min-sect .contact-btn {
-    opacity: 0;
     font-size: 1.3em;
     font-weight: 500;
     background-color: #222;
@@ -103,14 +95,10 @@ a {
     text-decoration: none;
     text-transform: capitalize;
     padding: .8em 1.5em;
-    animation: fade-in 2s ease 2s forwards;
-    -webkit-animation: fade-in 2s ease 2s forwards;
 }
 
 .min-sect-img {
     width: 50%;
-    animation: opacity 1s ease;
-    -webkit-animation: opacity 1s ease;
 }
 
 /*** About Section ***/
@@ -124,20 +112,16 @@ a {
 
 .about-sect .title {
     text-align: start;
-    animation: alternate-fade-in 1s ease;
-    -webkit-animation: alternate-fade-in 1s ease;
 }
 
 .my-img {
     width: 25%;
     border: #fff 1px solid;
     border-radius: 5px;
-    animation: opacity 1s ease;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    -webkit-animation: opacity 1s ease;
 }
 
 .paragraph-container {
@@ -151,19 +135,8 @@ a {
     line-height: 2em;
     margin-bottom: 2em;
 }
-.paragraph-container p:nth-child(2) {
-    opacity: 0;
-    animation: alternate-fade-in 1s ease 1s forwards;
-    -webkit-animation: alternate-fade-in 1s ease 1s forwards;
-}
-.paragraph-container p:nth-child(3) {
-    opacity: 0;
-    animation: alternate-fade-in 1s ease 2s forwards;
-    -webkit-animation: alternate-fade-in 1s ease 2s forwards;
-}
 
 .download-btn {
-    opacity: 0;
     font-size: 1.12em;
     font-weight: 400;
     color: #fff;
@@ -171,8 +144,6 @@ a {
     line-height: 1.40em;
     background-color: var(--secondary-color);
     padding: 1em 2em;
-    animation: alternate-fade-in 2.5s ease 3s forwards;
-    -webkit-animation: alternate-fade-in 2.5s ease 3s forwards;
 }
 
 /*** Skills Section ***/
@@ -194,6 +165,34 @@ a {
     -o-border-radius: 10px;
 }
 
+.skill-card:nth-child(2) {
+    transition-delay: .3s;
+}
+.skill-card:nth-child(3) {
+    transition-delay: .4s;
+}
+.skill-card:nth-child(4) {
+    transition-delay: .5s;
+}
+.skill-card:nth-child(5) {
+    transition-delay: .6s;
+}
+.skill-card:nth-child(6) {
+    transition-delay: .7s;
+}
+.skill-card:nth-child(7) {
+    transition-delay: .8s;
+}
+.skill-card:nth-child(8) {
+    transition-delay: .9s;
+}
+.skill-card:nth-child(9) {
+    transition-delay: 1s;
+}
+.skill-card:nth-child(10) {
+    transition-delay: 1.1s;
+}
+
 .skill-ico {
     font-size: 4em;
     margin: .3em 0;
@@ -205,94 +204,33 @@ a {
 
 .html {
     color: #B11D1D;
-    animation: fade-in 1s ease;
-    -webkit-animation: fade-in 1s ease;
 }
 .css {
     color: #2A237B;
-    animation: fade-in 1.5s ease;
-    -webkit-animation: fade-in 1.5s ease;
 }
 .js {
     color: #F0DB4F;
-    animation: fade-in 2s ease;
-    -webkit-animation: fade-in 2s ease;
 }
 .bootstrap {
     color: #671BC7;
-    animation: fade-in 2.5s ease;
-    -webkit-animation: fade-in 2.5s ease;
 }
 .figma {
     color: #671BC7;
-    animation: fade-in 3s ease;
-    -webkit-animation: fade-in 3s ease;
 }
 .ftp {
     color: #B11D1D;
-    animation: fade-in 3.5s ease;
-    -webkit-animation: fade-in 3.5s ease;
 }
 .ps {
     color: #1B6AC7;
-    animation: fade-in 4s ease;
-    -webkit-animation: fade-in 4s ease;
 }
 .wordpress {
     color: #23667B;
-    animation: fade-in 4.5s ease;
-    -webkit-animation: fade-in 4.5s ease;
 }
 .github {
     color: #444;
-    animation: fade-in 5s ease;
-    -webkit-animation: fade-in 5s ease;
 }
 .vuejs {
     color: #42B883;
-    animation: fade-in 5.5s ease;
-    -webkit-animation: fade-in 5.5s ease;
-}
-
-.html-container .skill {
-    animation: fade-in 1s ease;
-    -webkit-animation: fade-in 1s ease;
-}
-.css-container .skill {
-    animation: fade-in 1.5s ease;
-    -webkit-animation: fade-in 1.5s ease;
-}
-.js-container .skill {
-    animation: fade-in 2s ease;
-    -webkit-animation: fade-in 2s ease;
-}
-.bootstrap-container .skill {
-    animation: fade-in 2.5s ease;
-    -webkit-animation: fade-in 2.5s ease;
-}
-.figma-container .skill {
-    animation: fade-in 3s ease;
-    -webkit-animation: fade-in 3s ease;
-}
-.ftp-container .skill {
-    animation: fade-in 3.5s ease;
-    -webkit-animation: fade-in 3.5s ease;
-}
-.ps-container .skill {
-    animation: fade-in 4s ease;
-    -webkit-animation: fade-in 4s ease;
-}
-.wordpress-container .skill {
-    animation: fade-in 4.5s ease;
-    -webkit-animation: fade-in 4.5s ease;
-}
-.github-container .skill {
-    animation: fade-in 5s ease;
-    -webkit-animation: fade-in 5s ease;
-}
-.vuejs-container .skill {
-    animation: fade-in 5.5s ease;
-    -webkit-animation: fade-in 5.5s ease;
 }
 
 /*** Projects Section ***/
@@ -311,6 +249,7 @@ a {
     grid-template-columns: repeat(3, 1fr);
     gap: 3em;
     margin: auto;
+    text-align: center;
 }
 
 .project-card {
@@ -319,19 +258,11 @@ a {
     cursor: pointer;
 }
 
-.project-card:nth-child(1) {
-    animation: fade-in 1s ease;
-    -webkit-animation: fade-in 1s ease;
-}
 .project-card:nth-child(2) {
-    opacity: 0;
-    animation: fade-in 1s ease 1s forwards;
-    -webkit-animation: fade-in 1s ease 1s forwards;
+    transition-delay: .4s;
 }
 .project-card:nth-child(3) {
-    opacity: 0;
-    animation: fade-in 1s ease 2s forwards;
-    -webkit-animation: fade-in 1s ease 2s forwards;
+    transition-delay: .5s;
 }
 
 .project-img {
@@ -357,7 +288,6 @@ a {
 }
 
 .service-card {
-    opacity: 0;
     height: 300px;
     display: flex;
     align-items: center;
@@ -370,6 +300,21 @@ a {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+.service-card:nth-child(2) {
+    transition-delay: .4s;
+}
+.service-card:nth-child(3) {
+    transition-delay: .5s;
+}
+.service-card:nth-child(4) {
+    transition-delay: .6s;
+}
+.service-card:nth-child(5) {
+    transition-delay: .7s;
+}
+.service-card:nth-child(6) {
+    transition-delay: .8s;
 }
 
 .service-ico {
@@ -388,27 +333,19 @@ a {
 .web-development {
     background-color: #9068be;
     color: #fff;
-    animation: fade-in 1s ease forwards;
-    -webkit-animation: fade-in 1s ease forwards;
 }
 
 .hosting {
     background-color: #6ed3cf;
-    animation: fade-in 1s ease 1s forwards;
-    -webkit-animation: fade-in 1s ease 1s forwards;
 }
 
 .domain {
     background-color: #9068be;
     color: #fff;
-    animation: fade-in 1s ease 2s forwards;
-    -webkit-animation: fade-in 1s ease 2s forwards;
 }
 
 .hosting-management {
     background-color: #e1e8f0;
-    animation: fade-in 1s ease 3s forwards;
-    -webkit-animation: fade-in 1s ease 3s forwards;
 }
 
 .hosting-management .service-ico {
@@ -418,14 +355,10 @@ a {
 .ftp-management {
     background-color: #e62739;
     color: #fff;
-    animation: fade-in 1s ease 4s forwards;
-    -webkit-animation: fade-in 1s ease 4s forwards;
 }
 
 .wordpress-websites {
     background-color: #6ed3cf;
-    animation: fade-in 1s ease 5s forwards;
-    -webkit-animation: fade-in 1s ease 5s forwards;
 }
 
 /*** Responsive Media ***/
@@ -566,46 +499,21 @@ a {
 }
 
 /*** Animation ***/
-@keyframes fade-in {
-    from {
-        opacity: 0;
-        transform: translateX(-100%);
-        -webkit-transform: translateX(-100%);
-        -moz-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
-        -o-transform: translateX(-100%);
-    }to {
-        opacity: 1;
-        transform: translateX(0);
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        -o-transform: translateX(0);
-    }
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateX(-300px);
+    transition-delay: .2s;
+    -webkit-transform: translateX(-300px);
+    -moz-transform: translateX(-300px);
+    -ms-transform: translateX(-300px);
+    -o-transform: translateX(-300px);
 }
 
-@keyframes alternate-fade-in {
-    from {
-        opacity: 0;
-        transform: translateX(100%);
-        -webkit-transform: translateX(100%);
-        -moz-transform: translateX(100%);
-        -ms-transform: translateX(100%);
-        -o-transform: translateX(100%);
-    }to {
-        opacity: 1;
-        transform: translateX(0);
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        -o-transform: translateX(0);
-    }
-}
-
-@keyframes opacity {
-    from {
-        opacity: 0;
-    } to {
-        opacity: 1;
-    }
+.animate {
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
 }
