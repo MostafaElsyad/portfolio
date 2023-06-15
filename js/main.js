@@ -16,7 +16,7 @@ const header_component = {
         <a href="https://www.instagram.com/mustafa_elsyad/" target="_blank" class="social-ico"><i class="fa-brands fa-instagram ico"></i></a>
         <a href="https://www.linkedin.com/in/mostafa-elsyad/" target="_blank" class="social-ico"><i class="fa-brands fa-linkedin ico"></i></a>
         <a href="https://discord.com/channels/@me/Mostafa#9722" target="_blank" class="social-ico"><i class="fa-brands fa-discord ico"></i></a>
-        <a href="mailto:frontendwebmarkting@outlook.com" target="_blank" class="social-ico"><i class="fa-regular fa-envelope ico"></i></a>
+        <a href="https://twitter.com/mostafa27291659" target="_blank" class="social-ico"><i class="fa-brands fa-twitter ico"></i></a>
     </nav>
     <button id="navBTN" class="nav-btn"><i class="fa-solid fa-bars"></i></button>
     </header>`,
@@ -24,7 +24,7 @@ const header_component = {
     data() {
         return {};
     },
-};
+}
 const side_nav_component = {
     template:
     `<nav id="sideNav" class="side-nav">
@@ -37,14 +37,14 @@ const side_nav_component = {
             <a href="https://www.instagram.com/mustafa_elsyad/" target="_blank" class="social-ico"><i class="fa-brands fa-instagram ico"></i></a>
             <a href="https://www.linkedin.com/in/mostafa-elsyad/" target="_blank" class="social-ico"><i class="fa-brands fa-linkedin ico"></i></a>
             <a href="https://discord.com/channels/@me/Mostafa#9722" target="_blank" class="social-ico"><i class="fa-brands fa-discord ico"></i></a>
-            <a href="mailto:frontendwebmarkting@outlook.com" target="_blank" class="social-ico"><i class="fa-regular fa-envelope ico"></i></a>
+            <a href="https://twitter.com/mostafa27291659" target="_blank" class="social-ico"><i class="fa-brands fa-twitter ico"></i></a>
         </nav>
     </nav>`,
 
     data() {
         return {};
     },
-};
+}
 const footer_component = {
     template:
     `<footer>
@@ -54,17 +54,17 @@ const footer_component = {
             <a href="https://www.instagram.com/mustafa_elsyad/" target="_blank" class="social-ico"><i class="fa-brands fa-instagram ico"></i></a>
             <a href="https://www.linkedin.com/in/mostafa-elsyad/" target="_blank" class="social-ico"><i class="fa-brands fa-linkedin ico"></i></a>
             <a href="https://discord.com/channels/@me/Mostafa#9722" target="_blank" class="social-ico"><i class="fa-brands fa-discord ico"></i></a>
-            <a href="mailto:frontendwebmarkting@outlook.com" target="_blank" class="social-ico"><i class="fa-regular fa-envelope ico"></i></a>
+            <a href="https://twitter.com/mostafa27291659" target="_blank" class="social-ico"><i class="fa-brands fa-twitter ico"></i></a>
         </div>
     </footer>`,
 
     data() {
         return {};
     },
-};
+}
 const scroll_btn_component = {
     template: `<button id="scrollBTN" class="scroll-btn"><i class="fa-solid fa-arrow-up-long scroll-ico"></i></button>`,
-};
+}
 
 const vue_js = createApp ({
     data() {
@@ -77,18 +77,18 @@ const vue_js = createApp ({
         footer_component,
         scroll_btn_component,
     }
-}).mount("#app");
+}).mount("#app")
 
 // Scroll BTN
 const scrollBTN = document.getElementById('scrollBTN');
 
 function FadeIn() {
     scrollBTN.style.bottom = '6%';
-};
+}
 
 function FadeOut() {
     scrollBTN.style.bottom = '-10%';
-};
+}
 
 onscroll = function() {
     if(scrollY >= 400) {
@@ -96,11 +96,11 @@ onscroll = function() {
     }else {
         setTimeout(FadeOut(), 300);
     }
-};
+}
 
 scrollBTN.onclick = function() {
 scroll(0, 0);
-};
+}
 
 // Navigation BTN
 const navBTN = document.getElementById('navBTN');
@@ -115,15 +115,15 @@ navBTN.onclick = function slideNav() {
         sideNav.style.transform = 'translateX(100%)';
         closeNav.style.display = 'none'
     }
-};
+}
 
 closeNav.onclick = function closeNavFunction() {
     sideNav.style.transform = 'translateX(100%)';
     closeNav.style.display = 'none';
-};
+}
 
 // Intersection Observer API
-const animation_element = document.querySelectorAll(".animate-on-scroll");
+const animation_element = document.getElementsByClassName("animate-on-scroll");
 
 const observer = new IntersectionObserver((entries => {
     entries.forEach (entry => {
@@ -131,12 +131,10 @@ const observer = new IntersectionObserver((entries => {
             entry.target.classList.add("animate");
         };
     });
-}), {
-    threshold: .3,
-});
+}))
 
 for (let i = 0; i <= animation_element.length; i++) {
     const el = animation_element[i];
 
     observer.observe(el);
-};
+}
