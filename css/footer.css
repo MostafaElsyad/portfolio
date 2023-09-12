@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark-background-color);
+    padding: 1em 2em;
+}
+
+.footer .paragraph {
+    font-weight: 500;
+}
+
+.footer span {
+    color: var(--primary-color);
+    text-transform: capitalize;
+}

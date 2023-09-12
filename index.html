@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mostafa Ahmed">
+    <meta name="description" content="Experienced Front-end Web Developer specializing in web development. Proficient in HTML, CSS, JavaScript, and responsive design. Dedicated to crafting high-performance websites that deliver exceptional user experiences.">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/side.nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mostafa Ahmed</title>
+</head>
+<body>
+    <div id="app">
+        <main_header_component></main_header_component>
+        <nav_header_component></nav_header_component>
+        <aside id="side-nav" class="side-nav">
+            <a href="#home" class="nav-link font">home</a>
+            <a href="#features" class="nav-link font">features</a>
+            <a href="#services" class="nav-link font">services</a>
+            <a href="#projects" class="nav-link font">projects</a>
+            <a href="#about" class="nav-link font">about us</a>
+        </aside>
+        <div id="side-nav-background" class="side-nav-background"></div>
+        <section id="home" class="main-sect sect">
+            <div class="first-div">
+                <p class="paragraph">You are welcome to my portfolio website</p>
+                <h2 class="heading">empowering brands through exeptional websites</h2>
+                <h3 class="paragraph">Mastery of Web Development, Design, and Digital Solutions</h3>
+                <div class="btns">
+                    <a href="mailto:mostafaahmedelsyad1@gmail.com" class="contact-btn btn">contact me <i class="fa-solid fa-envelope"></i></a>
+                    <a href="callto:+201027447415" class="contact-btn btn">contact me now <i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="second-div">
+                <img src="img/main-sect-img.jpg" alt="developer developing project on air screens" class="main-sect-img">
+            </div>
+        </section>
+        <section id="features" class="features-sect sect">
+            <h2 class="title">features</h2>
+            <div class="features-container">
+                <div class="feature-card card">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                    <h3 class="heading">high quality</h3>
+                    <p class="paragraph font">Crafting front-end solutions with an unwavering commitment to high quality. Elevating user experiences through impeccable design, seamless functionality, and pixel-perfect precision.</p>
+                </div>
+                <div class="feature-card card">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <h3 class="heading">high performance</h3>
+                    <p class="paragraph font">Energizing front-end development with a focus on high performance. I optimize code, streamline processes, and prioritize speed to deliver lightning-fast, responsive web experiences that captivate and convert.</p>
+                </div>
+                <div class="feature-card card">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h3 class="heading">friendly with SEO</h3>
+                    <p class="paragraph font">Front-end expertise that harmonizes design and SEO seamlessly. My solutions not only look great but also perform exceptionally well in search engine rankings, ensuring maximum online visibility and success.</p>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services-sect sect">
+            <h2 class="title">services</h2>
+            <div class="services-card">
+                <i class="fa-solid fa-pager card-ico ico"></i>
+                <div>
+                    <h3 class="heading">develop professional templates</h3>
+                    <p class="paragraph">Revamp your online presence with my Front-end template development. I excel in crafting custom templates, meticulously balancing form and function. Proficient in HTML, CSS, and JavaScript, I ensure seamless user experiences on all devices, enhancing your digital footprint.</p>
+                </div>
+            </div>
+            <div class="services-card">
+                <i class="fa-solid fa-pager card-ico ico"></i>
+                <div>
+                    <h3 class="heading">friendly with SEO</h3>
+                    <p class="paragraph">Elevate your online visibility with my Front-end services optimized for SEO. I specialize in crafting user-friendly designs that search engines adore. With a deep understanding of SEO principles, I ensure your website not only looks great but also ranks high, driving organic traffic and maximizing your online presence.</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects-sect sect">
+            <h2 class="title">projects</h2>
+            <div class="projects-container">
+                <div v-for="project in projects" class="project-card">
+                    <img :src="project.img" class="card-img"></img>
+                    <a :href="project.href" target="_blank" class="heading">{{project.heading}}</a>
+                    <p class="paragraph type">{{project.type}}</p>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about-sect sect">
+            <div class="about-container">
+                <h2 class="title">who am i</h2>
+                <p class="paragraph">I am a skilled web developer specializing in WordPress and front-end development. With extensive experience in creating websites using cutting-edge technology, I continuously upgrade my skills to deliver innovative and effective solutions for my clients.</p>
+                <p class="paragraph">My work is characterized by a combination of key features that set it apart. I prioritize high-quality development, crafting websites and templates with precision and care. They are not only aesthetically pleasing but also optimized for top-notch performance and SEO-friendliness. This ensures a seamless user experience and excellent search engine rankings. My commitment to responsive design means your site looks great on all devices. With competitive pricing and a dedication to client satisfaction, my work brings exceptional value to your digital endeavors.</p>
+            </div>
+            <div>
+                <img src="img/about-sect-img.png" alt="personal-img" class="about-img img">
+            </div>
+        </section>
+        <footer_component></footer_component>
+    </div>
+    <script src="js/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
