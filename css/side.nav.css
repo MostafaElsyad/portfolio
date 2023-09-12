@@ -29,6 +29,7 @@
 }
 
 .nav-btn {
+    display: none;
     font-size: 1.5em;
     background-color: transparent;
     color: var(--light-font-color);
@@ -51,6 +52,10 @@
 
 @media(max-width: 912px) {
     .side-nav {
+        display: flex;
+    }
+
+    .nav-btn {
         display: flex;
     }
 }
