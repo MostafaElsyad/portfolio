@@ -5,11 +5,11 @@ const main_header_component = {
     `<header class="main-header header">
         <a href="" class="logo heading">mostafa</a>
         <nav class="navigation">
-            <a href="#home" class="nav-link font">home</a>
-            <a href="#features" class="nav-link font">features</a>
-            <a href="#services" class="nav-link font">services</a>
-            <a href="#projects" class="nav-link font">projects</a>
-            <a href="#about" class="nav-link font">about us</a>
+            <a href="#home" class="nav-link font">Home</a>
+            <a href="#features" class="nav-link font">Features</a>
+            <a href="#services" class="nav-link font">Services</a>
+            <a href="#projects" class="nav-link font">Projects</a>
+            <a href="#about" class="nav-link font">About Me</a>
         </nav>
         <button id="nav-btn" class="nav-btn"><i class="fa-solid fa-bars"></i></button>
     </header>`,
@@ -24,14 +24,38 @@ const nav_header_component = {
     `<header id="nav-header" class="nav-header header">
         <a href="" class="logo heading">mostafa</a>
         <nav class="navigation">
+            <a href="#home" class="nav-link font">Home</a>
+            <a href="#features" class="nav-link font">Features</a>
+            <a href="#services" class="nav-link font">Services</a>
+            <a href="#projects" class="nav-link font">Projects</a>
+            <a href="#about" class="nav-link font">About Me</a>
+        </nav>
+        <button id="nav-btn" class="nav-btn"><i class="fa-solid fa-bars"></i></button>
+    </header>`,
+
+    data() {
+        return {};
+    },
+}
+
+const side_nav_Component = {
+    template:
+    `<aside id="side-nav" class="side-nav">
             <a href="#home" class="nav-link font">home</a>
             <a href="#features" class="nav-link font">features</a>
             <a href="#services" class="nav-link font">services</a>
             <a href="#projects" class="nav-link font">projects</a>
             <a href="#about" class="nav-link font">about us</a>
-        </nav>
-        <button id="nav-btn" class="nav-btn"><i class="fa-solid fa-bars"></i></button>
-    </header>`,
+    </aside>`,
+
+    data() {
+        return {};
+    },
+}
+
+const side_nav_background_Component = {
+    template:
+    `<div id="side-nav-background" class="side-nav-background"></div>`,
 
     data() {
         return {};
@@ -69,10 +93,11 @@ const vue_js = createApp({
                 hotel = {img: "img/projects/hotel.jpeg", heading: "hotel", type: "front-end / template", href: "https://mostafaelsyad.github.io/hotel/"},
                 futura = {img: "img/projects/futura.jpeg", heading: "futura", type: "front-end / template", href: "https://mostafaelsyad.github.io/Futura/"},
                 gtvoid = {img: "img/projects/gtvoid.jpeg", heading: "gtvoid", type: "wordpress / website", href: "https://gtvoid.com/"},            
-                gtvoid = {img: "img/projects/looping.jpeg", heading: "lopping", type: "vue js / framework", href: "https://mostafaelsyad.github.io/Looping_Vue.Js_Products/"},            
-                gtvoid = {img: "img/projects/puzzle.jpeg", heading: "puzzle", type: "javascript / programming language", href: "https://mostafaelsyad.github.io/puzzle/"},            
-                gtvoid = {img: "img/projects/crud.jpeg", heading: "crud", type: "javascript / programming language", href: "https://mostafaelsyad.github.io/crud/"},
-                gtvoid = {img: "img/projects/xo.jpeg", heading: "XO", type: "javascript / programming language", href: "https://mostafaelsyad.github.io/JavaScript_XO/"}
+                lopping = {img: "img/projects/looping.jpeg", heading: "lopping", type: "vue js / framework", href: "https://mostafaelsyad.github.io/Looping_Vue.Js_Products/"},            
+                puzzle = {img: "img/projects/puzzle.jpeg", heading: "puzzle", type: "javascript / programming language", href: "https://mostafaelsyad.github.io/puzzle/"},            
+                crud = {img: "img/projects/crud.jpeg", heading: "crud", type: "javascript / programming language", href: "https://mostafaelsyad.github.io/crud/"},
+                XO = {img: "img/projects/xo.jpeg", heading: "XO", type: "javascript / programming language", href: "https://mostafaelsyad.github.io/JavaScript_XO/"}
+                game troves = {img: "img/projects/game-troves.jpeg", heading: "game troves", type: "front-end / template", href: "https://mostafaelsyad.github.io/Game_Troves/"}
             ]
         };
     },
