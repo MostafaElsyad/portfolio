@@ -83,6 +83,8 @@ const vue_js = createApp({
     components: {
         main_header_component,
         nav_header_component,
+        side_nav_component,
+        side_nav_background_component,
         footer_component,
     },
 
