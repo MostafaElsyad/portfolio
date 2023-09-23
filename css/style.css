@@ -135,6 +135,10 @@ body {
     -o-transform: scale(1.1);
 }
 
+.card-ico {
+    font-size: 2em;
+}
+
 /*** Main Section ***/
 .main-sect {
     height: 75vh;
@@ -201,11 +205,16 @@ body {
     background-color: var(--primary-color);
     padding: 1em;
     margin-bottom: 2em;
+    border-radius: var(--border-radius);
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
 }
 
 .services-card:hover {
