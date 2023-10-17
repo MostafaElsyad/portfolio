@@ -41,7 +41,7 @@
                 <button class="nav-portfolio-btn btn" id="nav-btn javascript-btn">JavaScript</button>
             </div>
             <div class="portfolio-container" id="portfolio-container">
-                <a v-for="project in projects" :key="project.id" :href="project.link" target="_blank" class="card project-card">
+                <a v-for="project in projects" :key="project.id" v-bind:href="project.link" target="_blank" class="card project-card">
                     <img :src="project.img" :alt="project.alt" class="project-card-img">
                     <div class="project-card-content">
                         <h3 class="project-card-heading">{{project.heading}}</h3>
