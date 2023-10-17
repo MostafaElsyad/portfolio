@@ -88,31 +88,31 @@ const vue_js = createApp({
     data() {
         return{
             projects: [
-                looping = {img: "/img/portfolio/vue_js_img/looping.jpeg", heading: "looping", paragraph: "Vue-js / Framework", id: 0, alt: "Vue js", link: "#"},
-                xo = {img: "../img/portfolio/javascript_img/xo.jpeg", heading: "XO", paragraph: "JavaScript / Programming Language", id: 1, alt: "XO JavaScript porject", link: "#"},
-                crud = {img: "../img/portfolio/javascript_img/crud.jpeg", heading: "crud", paragraph: "JavaScript / Programming Language", id: 2, alt: "CRUD JavaScript project", link: "#"},
-                puzzle = {img: "../img/portfolio/javascript_img/puzzle.jpeg", heading: "puzzle", paragraph: "JavaScript / Programming Language", id: 3, alt: "Puzzle JavaScript project", link: "#"},
-                hotel = {img: "../img/portfolio/websites_img/hotel.jpeg", heading: "hotel", paragraph: "Front-end / Template", id: 4, alt: "Hotel website", link: "#"},
-                futura = {img: "../img/portfolio/websites_img/futura.jpeg", heading: "futura", paragraph: "Front-end / Template", id: 5, alt: "Education Futura website", link: "#"},
-                home_based = {img: "../img/portfolio/websites_img/home_based.jpeg", heading: "home based", paragraph: "Front-end / Template", id: 6, alt: "Home Based website", link: "#"},
-                gtvoid = {img: "../img/portfolio/websites_img/gtvoid.jpeg", heading: "GTVoid", paragraph: "Web Development / WordPress", id: 7, alt: "GTVoid website", link: "#"},
+                looping = {img: "img/portfolio/vue_js_img/looping.jpeg", heading: "looping", paragraph: "Vue-js / Framework", id: 0, alt: "Vue js", link: "#"},
+                xo = {img: "img/portfolio/javascript_img/xo.jpeg", heading: "XO", paragraph: "JavaScript / Programming Language", id: 1, alt: "XO JavaScript porject", link: "#"},
+                crud = {img: "img/portfolio/javascript_img/crud.jpeg", heading: "crud", paragraph: "JavaScript / Programming Language", id: 2, alt: "CRUD JavaScript project", link: "#"},
+                puzzle = {img: "img/portfolio/javascript_img/puzzle.jpeg", heading: "puzzle", paragraph: "JavaScript / Programming Language", id: 3, alt: "Puzzle JavaScript project", link: "#"},
+                hotel = {img: "img/portfolio/websites_img/hotel.jpeg", heading: "hotel", paragraph: "Front-end / Template", id: 4, alt: "Hotel website", link: "#"},
+                futura = {img: "img/portfolio/websites_img/futura.jpeg", heading: "futura", paragraph: "Front-end / Template", id: 5, alt: "Education Futura website", link: "#"},
+                home_based = {img: "img/portfolio/websites_img/home_based.jpeg", heading: "home based", paragraph: "Front-end / Template", id: 6, alt: "Home Based website", link: "#"},
+                gtvoid = {img: "img/portfolio/websites_img/gtvoid.jpeg", heading: "GTVoid", paragraph: "Web Development / WordPress", id: 7, alt: "GTVoid website", link: "#"},
             ],
 
             vue_js: [
-                looping = {img: "../img/portfolio/vue_js_img/looping.jpeg", heading: "looping", paragraph: "Vue-js / Framework", id: 0, alt: "Vue js", link: "#"},
+                looping = {img: "img/portfolio/vue_js_img/looping.jpeg", heading: "looping", paragraph: "Vue-js / Framework", id: 0, alt: "Vue js", link: "#"},
             ],
 
             javascript: [
-                xo = {img: "../img/portfolio/javascript_img/xo.jpeg", heading: "XO", paragraph: "JavaScript / Programming Language", id: 1, alt: "XO JavaScript porject", link: "#"},
-                crud = {img: "../img/portfolio/javascript_img/crud.jpeg", heading: "crud", paragraph: "JavaScript / Programming Language", id: 2, alt: "CRUD JavaScript project", link: "#"},
-                puzzle = {img: "../img/portfolio/javascript_img/puzzle.jpeg", heading: "puzzle", paragraph: "JavaScript / Programming Language", id: 3, alt: "Puzzle JavaScript project", link: "#"},
+                xo = {img: "img/portfolio/javascript_img/xo.jpeg", heading: "XO", paragraph: "JavaScript / Programming Language", id: 1, alt: "XO JavaScript porject", link: "#"},
+                crud = {img: "img/portfolio/javascript_img/crud.jpeg", heading: "crud", paragraph: "JavaScript / Programming Language", id: 2, alt: "CRUD JavaScript project", link: "#"},
+                puzzle = {img: "img/portfolio/javascript_img/puzzle.jpeg", heading: "puzzle", paragraph: "JavaScript / Programming Language", id: 3, alt: "Puzzle JavaScript project", link: "#"},
             ],
 
             websites: [
-                hotel = {img: "../img/portfolio/websites_img/hotel.jpeg", heading: "hotel", paragraph: "Front-end / Template", id: 4, alt: "Hotel website", link: "#"},
-                futura = {img: "../img/portfolio/websites_img/futura.jpeg", heading: "futura", paragraph: "Front-end / Template", id: 5, alt: "Education Futura website", link: "#"},
-                home_based = {img: "../img/portfolio/websites_img/home_based.jpeg", heading: "home based", paragraph: "Front-end / Template", id: 6, alt: "Home Based website", link: "#"},
-                gtvoid = {img: "../img/portfolio/websites_img/gtvoid.jpeg", heading: "GTVoid", paragraph: "Web Development / WordPress", id: 7, alt: "GTVoid website", link: "#"},
+                hotel = {img: "img/portfolio/websites_img/hotel.jpeg", heading: "hotel", paragraph: "Front-end / Template", id: 4, alt: "Hotel website", link: "#"},
+                futura = {img: "img/portfolio/websites_img/futura.jpeg", heading: "futura", paragraph: "Front-end / Template", id: 5, alt: "Education Futura website", link: "#"},
+                home_based = {img: "img/portfolio/websites_img/home_based.jpeg", heading: "home based", paragraph: "Front-end / Template", id: 6, alt: "Home Based website", link: "#"},
+                gtvoid = {img: "img/portfolio/websites_img/gtvoid.jpeg", heading: "GTVoid", paragraph: "Web Development / WordPress", id: 7, alt: "GTVoid website", link: "#"},
             ]
         };
     },
