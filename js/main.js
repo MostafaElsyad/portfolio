@@ -88,7 +88,7 @@ const vue_js = createApp({
     data() {
         return{
             projects: [
-                looping = {img: "../img/portfolio/vue_js_img/looping.jpeg", heading: "looping", paragraph: "Vue-js / Framework", id: 0, alt: "Vue js", link: "#"},
+                looping = {img: "img/portfolio/vue_js_img/looping.jpeg", heading: "looping", paragraph: "Vue-js / Framework", id: 0, alt: "Vue js", link: "#"},
                 xo = {img: "../img/portfolio/javascript_img/xo.jpeg", heading: "XO", paragraph: "JavaScript / Programming Language", id: 1, alt: "XO JavaScript porject", link: "#"},
                 crud = {img: "../img/portfolio/javascript_img/crud.jpeg", heading: "crud", paragraph: "JavaScript / Programming Language", id: 2, alt: "CRUD JavaScript project", link: "#"},
                 puzzle = {img: "../img/portfolio/javascript_img/puzzle.jpeg", heading: "puzzle", paragraph: "JavaScript / Programming Language", id: 3, alt: "Puzzle JavaScript project", link: "#"},
