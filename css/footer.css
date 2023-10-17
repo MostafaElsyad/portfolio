@@ -1,16 +1,23 @@
-.footer {
+.main-footer {
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--dark-background-color);
-    padding: 1em 2em;
+    flex-direction: column;
+    background: url('../img/footer-img.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 3em 0;
 }
 
-.footer .paragraph {
+.main-footer .paragraph {
+    font-size: 1em;
     font-weight: 500;
+    text-transform: capitalize;
 }
 
-.footer span {
+.main-footer .paragraph .ico,
+.main-footer span {
     color: var(--primary-color);
-    text-transform: capitalize;
 }

@@ -3,15 +3,15 @@ const {createApp} = Vue;
 const main_header_component = {
     template:
     `<header class="main-header header">
-        <a href="" class="logo heading">mostafa</a>
+        <a href="index.html" class="logo">mustafa</a>
         <nav class="navigation">
             <a href="#home" class="nav-link">Home</a>
-            <a href="#features" class="nav-link">Features</a>
-            <a href="#services" class="nav-link">Services</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#about" class="nav-link">About Me</a>
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+            <a href="" class="nav-link">Services</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </nav>
-        <button id="nav-btn" class="nav-btn"><i class="fa-solid fa-bars"></i></button>
+        <button id="nav-header-btn" class="nav-header-btn"><i class="fa-solid fa-bars"></i></button>
     </header>`,
 
     data() {
@@ -19,43 +19,39 @@ const main_header_component = {
     },
 }
 
-const nav_header_component = {
+const side_nav = {
     template:
-    `<header id="nav-header" class="nav-header header">
-        <a href="" class="logo heading">mostafa</a>
-        <nav class="navigation">
-            <a href="#home" class="nav-link font">Home</a>
-            <a href="#features" class="nav-link font">Features</a>
-            <a href="#services" class="nav-link font">Services</a>
-            <a href="#projects" class="nav-link font">Projects</a>
-            <a href="#about" class="nav-link font">About Me</a>
-        </nav>
-        <button id="nav-btn" class="nav-btn"><i class="fa-solid fa-bars"></i></button>
-    </header>`,
+    `<div id="side-nav" class="side-nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="" class="nav-link">Services</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100084809237464" target="_blank" class="nav-link facebook-link"><i class="fa-brands fa-facebook ico facebook-ico"></i></a>
+            <a href="https://www.linkedin.com/in/mostafa-elsyad/" target="_blank" class="nav-link linkedin-link"><i class="fa-brands fa-linkedin ico linkedin-ico"></i></a>
+            <a href="https://www.instagram.com/mustafa_elsyad/" target="_blank" class="nav-link instagram-link"><i class="fa-brands fa-instagram ico instagram-ico"></i></a>
+            <a href="https://www.youtube.com/channel/UCkXJ712M6t23MMUkSTd2N4g" target="_blank" class="nav-link youtube-link"><i class="fa-brands fa-youtube ico youtube-ico"></i></a>
+        </div>
+    </div>`,
 
     data() {
         return {};
     },
 }
 
-const side_nav_component = {
+const close_nav = {
     template:
-    `<aside id="side-nav" class="side-nav">
-        <a href="#home" class="nav-link font">home</a>
-        <a href="#features" class="nav-link font">features</a>
-        <a href="#services" class="nav-link font">services</a>
-        <a href="#projects" class="nav-link font">projects</a>
-        <a href="#about" class="nav-link font">about us</a>
-    </aside>`,
+    `<div id="close-nav" class="close-nav"></div>`,
 
     data() {
         return {};
     },
 }
 
-const side_nav_background_component = {
+const scroll_btn = {
     template:
-    `<div id="side-nav-background" class="side-nav-background"></div>`,
+    `<button id="scroll-btn" class="scroll-btn btn"><i class="fa-solid fa-chevron-up"></i></button>`,
 
     data() {
         return {};
@@ -64,72 +60,117 @@ const side_nav_background_component = {
 
 const footer_component = {
     template:
-    `<footer class="footer">
-        <p class="paragraph">copyright back to <i class="fa-solid fa-copyright"></i> <span>mostafa ahmed</span></p>
-        <nav class="social-icons">
-            <a href="https://www.linkedin.com/in/mostafa-elsyad/" target="_blank" class="nav-link font"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://khamsat.com/user/mostafa_ahmed_elsyad" target="_blank" class="nav-link font"><i class="fa-solid fa-5"></i></a>
-            <a href="https://www.freelancer.com/u/MostafaElsyad" target="_blank" class="nav-link font"><i class="fa-solid fa-dove"></i></a>
-            <a href="https://www.youtube.com/channel/UCkXJ712M6t23MMUkSTd2N4g" target="_blank" class="nav-link font"><i class="fa-brands fa-youtube"></i></a>
-        </nav>
-    </footer>`,
+    `<footer class="main-footer">
+        <a href="index.html" class="logo">mustafa</a>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100084809237464" target="_blank" class="nav-link facebook-link"><i class="fa-brands fa-facebook ico facebook-ico"></i></a>
+            <a href="https://www.linkedin.com/in/mostafa-elsyad/" target="_blank" class="nav-link linkedin-link"><i class="fa-brands fa-linkedin ico linkedin-ico"></i></a>
+            <a href="https://www.instagram.com/mustafa_elsyad/" target="_blank" class="nav-link instagram-link"><i class="fa-brands fa-instagram ico instagram-ico"></i></a>
+            <a href="https://www.youtube.com/channel/UCkXJ712M6t23MMUkSTd2N4g" target="_blank" class="nav-link youtube-link"><i class="fa-brands fa-youtube ico youtube-ico"></i></a>
+        </div>
+        <p class="paragraph"><i class="fa-solid fa-copyright ico"></i> 2024 <span>mustafa</span> all rights reserved</p>
+        </footer>`,
 
-    data() {
-        return {};
-    },
+        data() {
+            return {};
+        },
 }
 
 const vue_js = createApp({
     components: {
         main_header_component,
-        nav_header_component,
-        side_nav_component,
-        side_nav_background_component,
+        side_nav,
+        close_nav,
+        scroll_btn,
         footer_component,
     },
 
     data() {
-        return {
+        return{
             projects: [
-                home_based = {img: "img/projects/home-based.jpeg", heading: "home based", type: "front-end / template", href: "https://mostafaelsyad.github.io/Home-Based/"},
-                hotel = {img: "img/projects/hotel.jpeg", heading: "hotel", type: "front-end / template", href: "https://mostafaelsyad.github.io/hotel/"},
-                futura = {img: "img/projects/futura.jpeg", heading: "futura", type: "front-end / template", href: "https://mostafaelsyad.github.io/Futura/"},
-                gtvoid = {img: "img/projects/gtvoid.jpeg", heading: "gtvoid", type: "wordpress / website", href: "https://gtvoid.com/"},            
-                lopping = {img: "img/projects/looping.jpeg", heading: "lopping", type: "vue js / framework", href: "https://mostafaelsyad.github.io/Looping_Vue.Js_Products/"},            
-                puzzle = {img: "img/projects/puzzle.jpeg", heading: "puzzle", type: "javascript / programming language", href: "https://mostafaelsyad.github.io/puzzle/"},            
-                crud = {img: "img/projects/crud.jpeg", heading: "crud", type: "javascript / programming language", href: "https://mostafaelsyad.github.io/crud/"},
-                XO = {img: "img/projects/xo.jpeg", heading: "XO", type: "javascript / programming language", href: "https://mostafaelsyad.github.io/JavaScript_XO/"}
+                looping = {img: "../img/portfolio/vue_js_img/looping.jpeg", heading: "looping", paragraph: "Vue-js / Framework", id: 0, alt: "Vue js", link: "#"},
+                xo = {img: "../img/portfolio/javascript_img/xo.jpeg", heading: "XO", paragraph: "JavaScript / Programming Language", id: 1, alt: "XO JavaScript porject", link: "#"},
+                crud = {img: "../img/portfolio/javascript_img/crud.jpeg", heading: "crud", paragraph: "JavaScript / Programming Language", id: 2, alt: "CRUD JavaScript project", link: "#"},
+                puzzle = {img: "../img/portfolio/javascript_img/puzzle.jpeg", heading: "puzzle", paragraph: "JavaScript / Programming Language", id: 3, alt: "Puzzle JavaScript project", link: "#"},
+                hotel = {img: "../img/portfolio/websites_img/hotel.jpeg", heading: "hotel", paragraph: "Front-end / Template", id: 4, alt: "Hotel website", link: "#"},
+                futura = {img: "../img/portfolio/websites_img/futura.jpeg", heading: "futura", paragraph: "Front-end / Template", id: 5, alt: "Education Futura website", link: "#"},
+                home_based = {img: "../img/portfolio/websites_img/home_based.jpeg", heading: "home based", paragraph: "Front-end / Template", id: 6, alt: "Home Based website", link: "#"},
+                gtvoid = {img: "../img/portfolio/websites_img/gtvoid.jpeg", heading: "GTVoid", paragraph: "Web Development / WordPress", id: 7, alt: "GTVoid website", link: "#"},
+            ],
+
+            vue_js: [
+                looping = {img: "../img/portfolio/vue_js_img/looping.jpeg", heading: "looping", paragraph: "Vue-js / Framework", id: 0, alt: "Vue js", link: "#"},
+            ],
+
+            javascript: [
+                xo = {img: "../img/portfolio/javascript_img/xo.jpeg", heading: "XO", paragraph: "JavaScript / Programming Language", id: 1, alt: "XO JavaScript porject", link: "#"},
+                crud = {img: "../img/portfolio/javascript_img/crud.jpeg", heading: "crud", paragraph: "JavaScript / Programming Language", id: 2, alt: "CRUD JavaScript project", link: "#"},
+                puzzle = {img: "../img/portfolio/javascript_img/puzzle.jpeg", heading: "puzzle", paragraph: "JavaScript / Programming Language", id: 3, alt: "Puzzle JavaScript project", link: "#"},
+            ],
+
+            websites: [
+                hotel = {img: "../img/portfolio/websites_img/hotel.jpeg", heading: "hotel", paragraph: "Front-end / Template", id: 4, alt: "Hotel website", link: "#"},
+                futura = {img: "../img/portfolio/websites_img/futura.jpeg", heading: "futura", paragraph: "Front-end / Template", id: 5, alt: "Education Futura website", link: "#"},
+                home_based = {img: "../img/portfolio/websites_img/home_based.jpeg", heading: "home based", paragraph: "Front-end / Template", id: 6, alt: "Home Based website", link: "#"},
+                gtvoid = {img: "../img/portfolio/websites_img/gtvoid.jpeg", heading: "GTVoid", paragraph: "Web Development / WordPress", id: 7, alt: "GTVoid website", link: "#"},
             ]
         };
     },
 }).mount("#app");
 
-// JavaScript
-const navHeader = document.getElementById("nav-header");
+// Active BTNs JavaScript
+btns_container = document.getElementById("btns-portfolio-container");
+portfolio_container = document.getElementById("portfolio-container");
+btns = btns_container.getElementsByClassName("nav-portfolio-btn");
+card = portfolio_container.getElementsByClassName("project-card")
+
+for(var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active-nav-portfolio-btn");
+        current[0].className = current[0].className.replace(" active-nav-portfolio-btn", "");
+        this.className += " active-nav-portfolio-btn";
+
+        // if(btns.className == "vue_js") {
+            
+        // }else if(btns.className == "javascript") {
+
+        // }else if(btns.className == "websites") {
+
+        // }
+    });
+}
+
+// Navigation Header BTN
+const nav_btn = document.getElementById("nav-header-btn");
+const sideNav = document.getElementById("side-nav");
+const closeNav = document.getElementById("close-nav");
+
+nav_btn.onclick = function slideNav() {
+    if(sideNav.style.transform == 'translateX(100%)') {
+        sideNav.style.transform = 'translateX(0)';
+        closeNav.style.display = 'flex';
+    }else {
+        sideNav.style.transform = 'translateX(100%)';
+        closeNav.style.display = "none";
+    }
+}
+
+closeNav.onclick = function closeNavFunction() {
+    sideNav.style.transform = 'translateX(100%)';
+    closeNav.style.display = 'none';
+}
+
+// Scroll BTN
+const scrollBTN = document.getElementById("scroll-btn");
 
 onscroll = function() {
-    if(scrollY >= 500) {
-        navHeader.style.transform = "translateY(0)";
+    if(scrollY >= 400) {
+        scrollBTN.style.transform = "translateY(0)"
     }else {
-        navHeader.style.transform = "translateY(-100%)";
+        scrollBTN.style.transform = "translateY(150%)"
     }
 }
 
-const sideNav = document.getElementById("side-nav");
-const sideNavBackground = document.getElementById("side-nav-background");
-const navBTN = document.getElementById("nav-btn");
-
-navBTN.onclick = function side_nav() {
-    if(sideNav.style.transform = "translateX(100%)") {
-        sideNav.style.transform = "translateX(0)";
-        sideNavBackground.style.display = "flex";
-    } else if(sideNav.style.transform = "translateX(0)"){
-        sideNav.style.transform = "translateX(100%)";
-        sideNavBackground.style.display = "none";
-    }
-}
-
-sideNavBackground.onclick = function sideNavBackgroundFunction() {
-    sideNav.style.transform = "translateX(100%)";
-    sideNavBackground.style.display = "none";
+scrollBTN.onclick = () => {
+    scroll(0, 0);
 }

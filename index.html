@@ -3,96 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Mostafa Ahmed">
-    <meta name="description" content="Experienced Front-end Web Developer specializing in web development. Proficient in HTML, CSS, JavaScript, and responsive design. Dedicated to crafting high-performance websites that deliver exceptional user experiences.">
+    <meta name="author" content="Mustafa Ahmed">
+    <meta name="description" content="Crafting seamless digital experiences as a Front-end Developer and AI Programmer. Expertise in web design and AI solutions for a modern, dynamic online world.">
+    <meta name="keywords" content="Front-end Development, Web Design, Web Development, AI Programming, User Experience, Responsive Design, AI Solutions, Machine Learning, Artificial Intelligence, Web Development, User Interface, Code Optimization, SEO, JavaScript, HTML/CSS, Responsive Web Design, Mobile-Friendly, UI/UX Design, Innovative Solutions, Modern Websites, Cutting-edge Technology">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/side.nav.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="ico/favicon.png" type="image/x-icon">
-    <title>Mostafa Ahmed</title>
+    <title>Mustafa Ahmed</title>
 </head>
 <body>
     <div id="app">
-        <main_header_component></main_header_component>
-        <nav_header_component></nav_header_component>
-        <side_nav_component></side_nav_component>
-        <side_nav_background_component></side_nav_background_component>
-        <section id="home" class="main-sect sect">
-            <div class="first-div">
-                <p class="paragraph">You are welcome to my portfolio website</p>
-                <h2 class="heading">empowering brands through exeptional websites</h2>
-                <h3 class="paragraph">Mastery of Web Development, SEO, Design, and Digital Solutions</h3>
-                <div class="btns">
-                    <a href="mailto:mostafaahmedelsyad1@gmail.com" class="contact-btn btn">contact me <i class="fa-solid fa-envelope"></i></a>
-                    <a href="callto:+201027447415" class="contact-btn btn">contact me now <i class="fa-solid fa-phone"></i></a>
-                </div>
-            </div>
-            <div class="second-div">
-                <img src="img/main-sect-img.jpg" alt="developer developing project on air screens" class="main-sect-img">
-            </div>
-        </section>
-        <section id="features" class="features-sect sect">
-            <h2 class="title">features</h2>
-            <div class="features-container">
-                <div class="feature-card card">
-                    <i class="fa-solid fa-hand-holding-heart card-ico"></i>
-                    <h3 class="heading">high quality</h3>
-                    <p class="paragraph font">Crafting front-end solutions with an unwavering commitment to high quality. Elevating user experiences through impeccable design, seamless functionality, and pixel-perfect precision.</p>
-                </div>
-                <div class="feature-card card">
-                    <i class="fa-solid fa-gauge-high card-ico"></i>
-                    <h3 class="heading">high performance</h3>
-                    <p class="paragraph font">Energizing front-end development with a focus on high performance. I optimize code, streamline processes, and prioritize speed to deliver lightning-fast, responsive web experiences that captivate and convert.</p>
-                </div>
-                <div class="feature-card card">
-                    <i class="fa-solid fa-magnifying-glass card-ico"></i>
-                    <h3 class="heading">friendly with SEO</h3>
-                    <p class="paragraph font">Front-end expertise that harmonizes design and SEO seamlessly. My solutions not only look great but also perform exceptionally well in search engine rankings, ensuring maximum online visibility and success.</p>
+        <side_nav></side_nav>
+        <close_nav></close_nav>
+        <section class="main-sect" id="home">
+            <main_header_component></main_header_component>
+            <div class="main-sect-container">
+                <h1 class="heading">Welcome to innovation in digital.</h1>
+                <p class="paragraph">Experience the synergy of Front-end Development and AI expertise, creating seamless digital solutions that redefine modern online experiences.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100084809237464" target="_blank" class="nav-link facebook-link"><i class="fa-brands fa-facebook ico facebook-ico"></i></a>
+                    <a href="https://www.linkedin.com/in/mostafa-elsyad/" target="_blank" class="nav-link linkedin-link"><i class="fa-brands fa-linkedin ico linkedin-ico"></i></a>
+                    <a href="https://www.instagram.com/mustafa_elsyad/" target="_blank" class="nav-link instagram-link"><i class="fa-brands fa-instagram ico instagram-ico"></i></a>
+                    <a href="https://www.youtube.com/channel/UCkXJ712M6t23MMUkSTd2N4g" target="_blank" class="nav-link youtube-link"><i class="fa-brands fa-youtube ico youtube-ico"></i></a>
                 </div>
             </div>
         </section>
-        <section id="services" class="services-sect sect">
-            <h2 class="title">services</h2>
-            <div class="services-card">
-                <i class="fa-solid fa-pager card-ico ico"></i>
-                <div>
-                    <h3 class="heading">develop professional templates</h3>
-                    <p class="paragraph">Revamp your online presence with my Front-end template development. I excel in crafting custom templates, meticulously balancing form and function. Proficient in HTML, CSS, and JavaScript, I ensure seamless user experiences on all devices, enhancing your digital footprint.</p>
-                </div>
+        <section class="portfolio-sect sect" id="portfolio">
+            <h2 class="title">portfolio</h2>
+            <p class="paragraph short">Here are my active and inactive projects</p>
+            <div class="btns-portfolio-container" id="btns-portfolio-container">
+                <button class="nav-portfolio-btn active-nav-portfolio-btn btn" id="nav-btn all-btn">All</button>
+                <button class="nav-portfolio-btn btn" id="nav-btn ai-btn">AI</button>
+                <button class="nav-portfolio-btn btn" id="nav-btn vue-js-btn">Vue-js</button>
+                <button class="nav-portfolio-btn btn" id="nav-btn python-btn">Python</button>
+                <button class="nav-portfolio-btn btn" id="nav-btn websites-btn">Websites</button>
+                <button class="nav-portfolio-btn btn" id="nav-btn javascript-btn">JavaScript</button>
             </div>
-            <div class="services-card">
-                <i class="fa-solid fa-magnifying-glass card-ico"></i>
-                <div>
-                    <h3 class="heading">friendly with SEO</h3>
-                    <p class="paragraph">Elevate your online visibility with my Front-end services optimized for SEO. I specialize in crafting user-friendly designs that search engines adore. With a deep understanding of SEO principles, I ensure your website not only looks great but also ranks high, driving organic traffic and maximizing your online presence.</p>
-                </div>
-            </div>
-        </section>
-        <section id="projects" class="projects-sect sect">
-            <h2 class="title">projects</h2>
-            <div class="projects-container">
-                <div v-for="project in projects" class="project-card">
-                    <img :src="project.img" class="card-img"></img>
-                    <a :href="project.href" target="_blank" class="heading">{{project.heading}}</a>
-                    <p class="paragraph type">{{project.type}}</p>
-                </div>
+            <div class="portfolio-container" id="portfolio-container">
+                <a v-for="project in projects" :key="project.id" :href="project.link" target="_blank" class="card project-card">
+                    <img :src="project.img" :alt="project.alt" class="project-card-img">
+                    <div class="project-card-content">
+                        <h3 class="project-card-heading">{{project.heading}}</h3>
+                        <p class="project-card-paragraph">{{project.paragraph}}</p>
+                    </div>
+                </a>
             </div>
         </section>
-        <section id="about" class="about-sect sect">
-            <div class="about-container">
+        <section class="about-sect sect" id="about">
+            <div class="about-background">
                 <h2 class="title">who am i</h2>
-                <p class="paragraph">I am a skilled web developer specializing in WordPress and front-end development. With extensive experience in creating websites using cutting-edge technology, I continuously upgrade my skills to deliver innovative and effective solutions for my clients.</p>
-                <p class="paragraph">My work is characterized by a combination of key features that set it apart. I prioritize high-quality development, crafting websites and templates with precision and care. They are not only aesthetically pleasing but also optimized for top-notch performance and SEO-friendliness. This ensures a seamless user experience and excellent search engine rankings. My commitment to responsive design means your site looks great on all devices. With competitive pricing and a dedication to client satisfaction, my work brings exceptional value to your digital endeavors.</p>
-            </div>
-            <div>
-                <img src="img/about-sect-img.png" alt="personal-img" class="about-img img">
+                <p class="paragraph short">Know more about me and my skills</p>
+                <div class="about-container">
+                    <div class="about-container-paragraph">
+                        <p class="paragraph">Hello, I'm a dedicated Front-end Developer and AI Programmer, passionate about delivering exceptional digital experiences. My journey began with self-improvement, crafting a skill set that now allows me to offer budget-friendly services with added benefits.</p>
+                        <p class="paragraph">As a Front-end Developer and AI Programmer, I'm committed to self-improvement. Offering affordable services with free perks, I leverage cutting-edge technology to enhance your digital presence, My journey involves continuous self-development. I'm dedicated to providing my clients with professional, perfect services. By staying at the forefront of industry advancements, I ensure the highest quality solutions.</p>
+                        <a href="about.html" class="know-more-btn nav-link btn">know more</a>
+                    </div>
+                    <img src="img/my-img.png" alt="Programmer stand by side with a little smile" class="my-img">
+                </div>
             </div>
         </section>
+        <section class="contact-sect sect" id="contact">
+            <div class="contact-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6970.898077459208!2d30.7350962!3d31.0352202!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2seg!4v1697522712722!5m2!1sen!2seg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                <form action="https://formsubmit.co/mostafaahmedelsyad1@gmail.com" method="post" class="contact-form">
+                    <h2 class="title">contact...</h2>
+                    <input type="text" name="name" id="name" class="contact-inp" placeholder="Name" required>
+                    <input type="email" name="email" id="email" class="contact-inp" placeholder="Email" required>
+                    <input type="text" name="subject" id="subject" class="contact-inp" placeholder="Subject" required>
+                    <textarea type="text" name="message" id="message" class="contact-inp" placeholder="Message" required></textarea>
+                    <button type="submit" id="submit" class="contact-inp">submit</button>
+                </form>
+            </div>
+        </section>
+        <scroll_btn></scroll_btn>
         <footer_component></footer_component>
     </div>
-    <script src="js/vue.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="js/vue.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
